@@ -1,11 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { ListItems,ListItemDisplay } from './';
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
-      <div>
-        <h1>Hellow</h1>
-      </div>
+      <div className="component-container">
+        <ListItems/>
+        <ListItemDisplay />
+      </div>  
     );
   }
 }
