@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Spark18-Assignment/static/css/main.0e03ccf1.chunk.css",
+    "main.js": "/Spark18-Assignment/static/js/main.d7400a73.chunk.js",
+    "main.js.map": "/Spark18-Assignment/static/js/main.d7400a73.chunk.js.map",
+    "runtime-main.js": "/Spark18-Assignment/static/js/runtime-main.d5ddd8c7.js",
+    "runtime-main.js.map": "/Spark18-Assignment/static/js/runtime-main.d5ddd8c7.js.map",
+    "static/js/2.eeb2a7cd.chunk.js": "/Spark18-Assignment/static/js/2.eeb2a7cd.chunk.js",
+    "static/js/2.eeb2a7cd.chunk.js.map": "/Spark18-Assignment/static/js/2.eeb2a7cd.chunk.js.map",
+    "index.html": "/Spark18-Assignment/index.html",
+    "precache-manifest.fd2d66cbb93b1812301481258a44b884.js": "/Spark18-Assignment/precache-manifest.fd2d66cbb93b1812301481258a44b884.js",
+    "service-worker.js": "/Spark18-Assignment/service-worker.js",
+    "static/css/main.0e03ccf1.chunk.css.map": "/Spark18-Assignment/static/css/main.0e03ccf1.chunk.css.map",
+    "static/js/2.eeb2a7cd.chunk.js.LICENSE.txt": "/Spark18-Assignment/static/js/2.eeb2a7cd.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d5ddd8c7.js",
+    "static/js/2.eeb2a7cd.chunk.js",
+    "static/css/main.0e03ccf1.chunk.css",
+    "static/js/main.d7400a73.chunk.js"
+  ]
+}
