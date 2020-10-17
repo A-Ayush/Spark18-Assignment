@@ -12,23 +12,15 @@ class listItems extends Component {
         // console.log(e.target.id);
         const type = e.target.id;
         const value = e.target.value;
-        if(type == 0){
+        if(type === '0'){
             this.props.dispatch(changeDsCheckbox(value));
-        }else if(type == 1){
+        }else if(type === '1'){
             this.props.dispatch(changeWebCheckbox(value));
         }else{
             this.props.dispatch(changeDbCheckbox(value));
         }
     }
     
-    toggleState = (obj,value) => {
-        for (var objj of obj){
-            if(objj.value == value){
-                objj.checked = !objj.checked;
-            }
-        }
-        console.log(obj);
-    }
     render() {
         const {ds,web,db} = this.props;
         console.log('Render');

@@ -4,6 +4,7 @@ import {
 } from '../actions/actionTypes';
 
 const initialState = {
+    dbDisplay: [],
     db: [{value:'SQL',checked:false,key:0,id:2},{value:'MongoDB',checked:false,key:1,id:2}]
 }
 
@@ -18,6 +19,12 @@ export default function auth(state = initialState, action){
             state.db.map((obj) => {
                 if(obj.value == action.value){
                     obj.checked = !obj.checked;
+                }
+            })
+            state.dbDisplay=[];
+            state.db.map((obj) => {
+                if(obj.checked === true){
+                    state.dbDisplay.push(obj.value);
                 }
             })
             return { ...state };

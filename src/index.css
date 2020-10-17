@@ -24,6 +24,11 @@ code {
   width: 48vw;
   padding: 10px;
 }
+.mycontainer{
+  background-color: #dec9c9;
+  width: 48vw;
+  padding: 10px;
+}
 .display-container{
   background-color: #dec9c9;
   display: flex;
@@ -33,4 +38,23 @@ code {
 }
 label{
   display: block;
+}
+
+.display-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: grey;
+  width: 30vw;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.name{
+  display: flex;
+  flex-direction: column;
+}
+.icon{
+  display: flex;
+  flex-direction: column;
+  color: red;
 }

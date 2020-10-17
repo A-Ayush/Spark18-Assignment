@@ -4,6 +4,7 @@ import {
 } from '../actions/actionTypes';
 
 const initialState = {
+    webDisplay: [],
     web : [{value:'HTML',checked:false,key:0,id:1},{value:'CSS',checked:false,key:1,id:1},{value:'JavaScript',checked:false,key:2,id:1},{value:'Nodejs',checked:false,key:3,id:1}]
 }
 
@@ -18,6 +19,12 @@ export default function auth(state = initialState, action){
             state.web.map((obj) => {
                 if(obj.value == action.value){
                     obj.checked = !obj.checked;
+                }
+            })
+            state.webDisplay=[];
+            state.web.map((obj) => {
+                if(obj.checked === true){
+                    state.webDisplay.push(obj.value);
                 }
             })
             return { ...state };
