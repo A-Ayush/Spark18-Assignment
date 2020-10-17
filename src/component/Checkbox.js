@@ -1,20 +1,15 @@
 import React, { Component } from 'react';
 
 class Checkbox extends Component {
-    constructor(props){
-        super(props)
-    }
     render() {
-        const {items} = this.props;
-        // console.log(items.value);
+        const {items,toggleCheckboxChange} = this.props;
+        // console.log(items);
         return (
-            <div>
-                 <label>
-                    <input type="checkbox" value= {items.value} id= {items.key}
-                    />
-                    {items.value}
-                </label>
-            </div>
+            <label>
+                <input type="checkbox" value= {items.value} id= {items.id}  checked={items.checked} onClick={toggleCheckboxChange}/>
+                {items.value}
+            </label>
+            
         );
     }
 }

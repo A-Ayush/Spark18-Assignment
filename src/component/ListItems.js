@@ -1,23 +1,26 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Checkbox } from './index';
+import { changeDsCheckbox,changeDbCheckbox,changeWebCheckbox } from '../actions';
 
 class listItems extends Component {
     constructor(props){
         super(props)
     }
+    
     toggleCheckboxChange = (e) => {
-        const id = e.target.id;
-        var obj;
-        if(id == 0){
-            obj = this.state.ds;
-        }else if(id == 1){
-            obj = this.state.web;
+        // console.log(e.target.id);
+        const type = e.target.id;
+        const value = e.target.value;
+        if(type == 0){
+            this.props.dispatch(changeDsCheckbox(value));
+        }else if(type == 1){
+            this.props.dispatch(changeWebCheckbox(value));
         }else{
-            obj = this.state.db;
+            this.props.dispatch(changeDbCheckbox(value));
         }
-        this.toggleState(obj,e.target.value);
     }
+    
     toggleState = (obj,value) => {
         for (var objj of obj){
             if(objj.value == value){
@@ -28,34 +31,28 @@ class listItems extends Component {
     }
     render() {
         const {ds,web,db} = this.props;
+        console.log('Render');
         return (
             <div className="container">
                 <h2>Data Structure</h2>
                 {
                     ds.ds.map((data,key) => (
-                        <Checkbox items={data} key={key} />
+                        <Checkbox items={data} key={key} toggleCheckboxChange={this.toggleCheckboxChange}/>
                     )) 
                 }
                 <h2>Web</h2>
                 {
                     web.web.map((data,key) => (
-                        <Checkbox items={data} key={key} />
+                        <Checkbox items={data} key={key} toggleCheckboxChange={this.toggleCheckboxChange} />
                     )) 
                 }
                 
                 <h2>Database</h2>
-                <label>
-                    <input type="checkbox" value= "SQL"
-                        onChange={this.toggleCheckboxChange} id='2'
-                    />
-                    SQL
-                </label>
-                <label>
-                    <input type="checkbox" value= "MongoDB"
-                        onChange={this.toggleCheckboxChange} id='1'
-                    />
-                    MongoDB
-                </label>
+                {
+                    db.db.map((data,key) => (
+                        <Checkbox items={data} key={key} toggleCheckboxChange={this.toggleCheckboxChange} />
+                    )) 
+                }
             </div>
         );
     }
