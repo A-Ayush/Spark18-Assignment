@@ -5,15 +5,14 @@ class Checkbox extends Component {
         super(props)
     }
     render() {
-        const items = this.props;
-        console.log(items);
-        // console.log(items.items.ds)
+        const {items} = this.props;
+        // console.log(items.value);
         return (
             <div>
                  <label>
-                    <input type="checkbox" value= "Array" id='0'
+                    <input type="checkbox" value= {items.value} id= {items.key}
                     />
-                    Array
+                    {items.value}
                 </label>
             </div>
         );

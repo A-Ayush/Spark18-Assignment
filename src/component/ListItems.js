@@ -5,11 +5,6 @@ import { Checkbox } from './index';
 class listItems extends Component {
     constructor(props){
         super(props)
-        this.state={
-            ds : [{value:'Array',checked:false},{value:'LinkList',checked:false},{value:'HashMap',checked:false},{value:'Stack',checked:false}],
-            web : [{value:'HTML',checked:false},{value:'CSS',checked:false},{value:'JavaScript',checked:false},{value:'Nodejs',checked:false}],
-            db: [{value:'SQL',checked:false},{value:'MongoDB',checked:false}]
-        }
     }
     toggleCheckboxChange = (e) => {
         const id = e.target.id;
@@ -32,61 +27,21 @@ class listItems extends Component {
         console.log(obj);
     }
     render() {
-        // const {ds,web,db} = this.state;
         const {ds,web,db} = this.props;
         return (
             <div className="container">
                 <h2>Data Structure</h2>
-                <label>
-                    <input type="checkbox" value= "Array"
-                        onChange={this.toggleCheckboxChange} id='0'
-                    />
-                    Array
-                </label>
-                <label>
-                    <input type="checkbox" value= "LinkList" 
-                        onChange={this.toggleCheckboxChange} id='0'
-                    />
-                    LinkList
-                </label>
-                <label>
-                    <input type="checkbox" value= "HashMap"
-                        onChange={this.toggleCheckboxChange} id='0'
-                    />
-                    HashMap
-                </label>
-                <label>
-                    <input type="checkbox" value= "Stack"
-                        onChange={this.toggleCheckboxChange} id='0'
-                    />
-                    Stack
-                </label>
-                
+                {
+                    ds.ds.map((data,key) => (
+                        <Checkbox items={data} key={key} />
+                    )) 
+                }
                 <h2>Web</h2>
-                <label>
-                    <input type="checkbox" value= "HTML"
-                        onChange={this.toggleCheckboxChange} id='1'
-                    />
-                    HTML
-                </label>
-                <label>
-                    <input type="checkbox" value= "CSS"
-                        onChange={this.toggleCheckboxChange} id='1'
-                    />
-                    CSS
-                </label>
-                <label>
-                    <input type="checkbox" value= "JavaScript"
-                        onChange={this.toggleCheckboxChange} id='1'
-                    />
-                    Java Script
-                </label>
-                <label>
-                    <input type="checkbox" value= "Nodejs"
-                        onChange={this.toggleCheckboxChange} id='1'
-                    />
-                    Nodejs
-                </label>
+                {
+                    web.web.map((data,key) => (
+                        <Checkbox items={data} key={key} />
+                    )) 
+                }
                 
                 <h2>Database</h2>
                 <label>

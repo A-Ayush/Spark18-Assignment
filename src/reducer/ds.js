@@ -3,9 +3,7 @@ import {
 } from '../actions/actionTypes';
 
 const initialState = {
-    ds : [{value:'Array',checked:false},{value:'LinkList',checked:false},{value:'HashMap',checked:false},{value:'Stack',checked:false}],
-    // web : [{value:'HTML',checked:false},{value:'CSS',checked:false},{value:'JavaScript',checked:false},{value:'Nodejs',checked:false}],
-    // db: [{value:'SQL',checked:false},{value:'MongoDB',checked:false}]
+    ds : [{value:'Array',checked:false, key:0},{value:'LinkList',checked:false,key:1},{value:'HashMap',checked:false,key:2},{value:'Stack',checked:false,key:3}]
 }
 
 export default function auth(state = initialState, action){

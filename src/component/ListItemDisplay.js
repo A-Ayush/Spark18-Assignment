@@ -4,7 +4,7 @@ class ListItemDisplay extends Component {
     render() {
         return (
             <div className="display-container">
-                <h1>Display</h1>
+                <h1>Display: Not implemented yet</h1>
             </div>
         );
     }
