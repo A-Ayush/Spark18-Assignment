@@ -28,7 +28,7 @@ class ListItemDisplay extends Component {
                 <div className="display-container">
                     {dsDisplay.length > 0 && (
                         <ul>
-                            <span>Data Structure</span>
+                            <span className="item-heading">Data Structure</span>
                             {
                                 dsDisplay.map((data) => (
                                     <li className="display-item">
@@ -43,7 +43,7 @@ class ListItemDisplay extends Component {
                 <div className="display-container">
                     {webDisplay.length > 0 && (
                         <ul>
-                            <span>Web Development</span>
+                            <span className="item-heading">Web</span>
                             {
                                 webDisplay.map((data) => (
                                     <li className="display-item">
@@ -58,7 +58,7 @@ class ListItemDisplay extends Component {
                 <div className="display-container">
                     {dbDisplay.length > 0 && (
                         <ul>
-                            <span>DataBase</span>
+                            <span className="item-heading">DataBase</span>
                             {
                                 dbDisplay.map((data) => (
                                     <li className="display-item">

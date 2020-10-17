@@ -39,7 +39,7 @@ class listItems extends Component {
                     )) 
                 }
                 
-                <h2>Database</h2>
+                <h2>DataBase</h2>
                 {
                     db.db.map((data,key) => (
                         <Checkbox items={data} key={key} toggleCheckboxChange={this.toggleCheckboxChange} />
