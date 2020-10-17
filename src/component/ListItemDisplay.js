@@ -1,7 +1,23 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { changeDsCheckbox,changeDbCheckbox,changeWebCheckbox } from '../actions';
 
 class ListItemDisplay extends Component {
+    toggleDsCheckbox = (e) => {
+        // console.log("target",e.target);
+        const value = e.target.id;
+        this.props.dispatch(changeDsCheckbox(value));
+    }
+    toggleDbCheckbox = (e) => {
+        // console.log("target",e.target);
+        const value = e.target.id;
+        this.props.dispatch(changeDbCheckbox(value));
+    }
+    toggleWebCheckbox = (e) => {
+        // console.log("target",e.target);
+        const value = e.target.id;
+        this.props.dispatch(changeWebCheckbox(value));
+    }
     render() {
         // console.log("display",this.props.ds.dsDisplay);
         const dsDisplay = this.props.ds.dsDisplay;
@@ -17,7 +33,7 @@ class ListItemDisplay extends Component {
                                 dsDisplay.map((data) => (
                                     <li className="display-item">
                                         <span className="name">{data}</span>
-                                        <i className="fa fa-times icon" aria-hidden="true"></i>
+                                        <i className="fa fa-times icon" aria-hidden="true" id={data} onClick={this.toggleDsCheckbox}></i>
                                     </li>
                                 ))
                             }
@@ -32,7 +48,7 @@ class ListItemDisplay extends Component {
                                 webDisplay.map((data) => (
                                     <li className="display-item">
                                         <span className="name">{data}</span>
-                                        <i className="fa fa-times icon" aria-hidden="true"></i>
+                                        <i className="fa fa-times icon" aria-hidden="true" id={data} onClick={this.toggleWebCheckbox}></i>
                                     </li>
                                 ))
                             }
@@ -47,7 +63,7 @@ class ListItemDisplay extends Component {
                                 dbDisplay.map((data) => (
                                     <li className="display-item">
                                         <span className="name">{data}</span>
-                                        <i className="fa fa-times icon" aria-hidden="true"></i>
+                                        <i className="fa fa-times icon" aria-hidden="true" id={data} onClick={this.toggleDbCheckbox}></i>
                                     </li>
                                 ))
                             }
