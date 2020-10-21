@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Spark18-Assignment/static/css/main.afbeb5a7.chunk.css",
-    "main.js": "/Spark18-Assignment/static/js/main.5394f7da.chunk.js",
-    "main.js.map": "/Spark18-Assignment/static/js/main.5394f7da.chunk.js.map",
+    "main.css": "/Spark18-Assignment/static/css/main.f955237b.chunk.css",
+    "main.js": "/Spark18-Assignment/static/js/main.6efcc297.chunk.js",
+    "main.js.map": "/Spark18-Assignment/static/js/main.6efcc297.chunk.js.map",
     "runtime-main.js": "/Spark18-Assignment/static/js/runtime-main.d5ddd8c7.js",
     "runtime-main.js.map": "/Spark18-Assignment/static/js/runtime-main.d5ddd8c7.js.map",
     "static/js/2.e30d837c.chunk.js": "/Spark18-Assignment/static/js/2.e30d837c.chunk.js",
     "static/js/2.e30d837c.chunk.js.map": "/Spark18-Assignment/static/js/2.e30d837c.chunk.js.map",
     "index.html": "/Spark18-Assignment/index.html",
-    "precache-manifest.d230bfd39ac006f16abdadd3db8064ce.js": "/Spark18-Assignment/precache-manifest.d230bfd39ac006f16abdadd3db8064ce.js",
+    "precache-manifest.59e817ffc43ad128cf3f7c0e16dcd7e0.js": "/Spark18-Assignment/precache-manifest.59e817ffc43ad128cf3f7c0e16dcd7e0.js",
     "service-worker.js": "/Spark18-Assignment/service-worker.js",
-    "static/css/main.afbeb5a7.chunk.css.map": "/Spark18-Assignment/static/css/main.afbeb5a7.chunk.css.map",
+    "static/css/main.f955237b.chunk.css.map": "/Spark18-Assignment/static/css/main.f955237b.chunk.css.map",
     "static/js/2.e30d837c.chunk.js.LICENSE.txt": "/Spark18-Assignment/static/js/2.e30d837c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d5ddd8c7.js",
     "static/js/2.e30d837c.chunk.js",
-    "static/css/main.afbeb5a7.chunk.css",
-    "static/js/main.5394f7da.chunk.js"
+    "static/css/main.f955237b.chunk.css",
+    "static/js/main.6efcc297.chunk.js"
   ]
 }
