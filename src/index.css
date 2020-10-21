@@ -22,17 +22,26 @@ code {
   margin-top: 50px;
 }
 .container{
-  background-color:  #cfc9e0;
+  /* background-color:  #cfc9e0; */
+  background-color: white;
   width: 30vw;
   height: 80vh;
   padding: 10px;
   margin-left: 200px;
   border-radius: 8px;
 }
+.mylable{
+  margin-left: 15px;
+}
+.myCheckbox{
+  margin-right: 3px;
+}
 .mycontainer{
-  background-color: #cfc9e0;
+  /* background-color: #cfc9e0; */
+  background-color: white;
   width: 30vw;
-  height: 80vh;
+  min-height: 80vh;
+  height: auto;
   margin-right: 200px;
   padding: 10px;
   border-radius: 8px;
@@ -49,21 +58,27 @@ label{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #fbfcfe;
+  /* background-color: #fbfcfe; */
+  background-color: #d2c8eec9;
   width: 20vw;
   padding: 5px;
   margin-bottom: 10px;
 }
 .name{
   display: flex;
+  padding: 3px;
   flex-direction: column;
 }
 .icon{
   display: flex;
   flex-direction: column;
-  color: red;
+  /* color: red; */
+  color: gray;
+  padding: 3px;
 }
-
+.icon:hover{
+  cursor: pointer;
+}
 .item-heading{
   /* color: #cd3700; */
   color: black;
@@ -72,8 +87,9 @@ label{
   margin-bottom: 2px;
 }
 .logo-color{
-  color: blue !important;
-  margin-left: 100px;
+  color: #7a7ad9 !important;
+  margin-left: 200px !important;
+  font-weight: bolder !important;
 }
 .display-nodata{
   text-align: center;

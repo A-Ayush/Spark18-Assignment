@@ -5,8 +5,8 @@ class Checkbox extends Component {
         const {items,toggleCheckboxChange} = this.props;
         // console.log(items);
         return (
-            <label>
-                <input type="checkbox" value= {items.value} id= {items.id}  checked={items.checked} onClick={toggleCheckboxChange}/>
+            <label className="mylable">
+                <input type="checkbox" value= {items.value} id= {items.id}  checked={items.checked} onClick={toggleCheckboxChange} className="myCheckbox"/>
                 {items.value}
             </label>
             

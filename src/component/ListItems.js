@@ -26,20 +26,20 @@ class listItems extends Component {
         console.log('Render');
         return (
             <div className="container">
-                <h2>Data Structure</h2>
+                <h2 className="mylable">Data Structure</h2>
                 {
                     ds.ds.map((data,key) => (
                         <Checkbox items={data} key={key} toggleCheckboxChange={this.toggleCheckboxChange}/>
                     )) 
                 }
-                <h2>Web</h2>
+                <h2 className="mylable">Web</h2>
                 {
                     web.web.map((data,key) => (
                         <Checkbox items={data} key={key} toggleCheckboxChange={this.toggleCheckboxChange} />
                     )) 
                 }
                 
-                <h2>DataBase</h2>
+                <h2 className="mylable">DataBase</h2>
                 {
                     db.db.map((data,key) => (
                         <Checkbox items={data} key={key} toggleCheckboxChange={this.toggleCheckboxChange} />
