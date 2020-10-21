@@ -1,12 +1,16 @@
 import React from 'react';
-import { ListItems,ListItemDisplay } from './';
+import { ListItems,ListItemDisplay,NavBar } from './';
 
 class App extends React.Component {
   render() {
     return (
-      <div className="component-container">
-        <ListItems/>
-        <ListItemDisplay />
+      <div>
+        <NavBar />
+        <div className="component-container">
+          <ListItems/>
+          <ListItemDisplay />
+        </div>
+        
       </div>  
     );
   }

@@ -25,6 +25,7 @@ class ListItemDisplay extends Component {
         const webDisplay = this.props.web.webDisplay;
         return (
             <div className="mycontainer">
+                {dsDisplay.length == 0 && dbDisplay.length ==0 && webDisplay.length == 0 && <div className="display-nodata">No Value Selected</div>}
                 <div className="display-container">
                     {dsDisplay.length > 0 && (
                         <ul>
