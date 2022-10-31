@@ -7,7 +7,7 @@ Hosted : [Click Here..](http://rohan-sharma.me/Spark18-Assignment/)
 ## Getting Started
 
 1. Clone the project.
-2. Go to folder.
+2. Navigate to project folder.
 3. Run following command:
    ```
    npm install
